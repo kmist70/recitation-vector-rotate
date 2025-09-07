@@ -14,7 +14,7 @@ std::vector<int> RotateChunks(const std::vector<int>& vect, unsigned int chunk_s
   std::vector<int> result;
 
   // handles case where chunk size is 0 (returns empty vector)
-  if (chunk_size == 0) {
+  if (chunk_size == 0 || vect.empty()) {
     return result;
   }
 
