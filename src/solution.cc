@@ -41,7 +41,7 @@ std::vector<int> RotateChunks(const std::vector<int>& vect, unsigned int chunk_s
       current_chunk.push_back(vect[i+j]);
     }
 
-    // new vector for the rotated chunk
+    // new vector for the rotated chunk (to minimize confusion)
     std::vector<int> rotated_chunk = RotateRight(current_chunk, actual_rotations);
 
     // adds to the vector assigned to result, which holds all the rotated chunks
