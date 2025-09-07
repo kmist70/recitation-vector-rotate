@@ -13,7 +13,7 @@ std::vector<int> RotateRight(const std::vector<int>& vect, unsigned int no_rotat
 std::vector<int> RotateChunks(const std::vector<int>& vect, unsigned int chunk_size, unsigned int no_rotations) {
   std::vector<int> result;
 
-  // handles case where chunk size is 0 (returns empty vector)
+  // handles case where chunk size is 0 or given vector is empty (returns empty vector)
   if (chunk_size == 0 || vect.empty()) {
     return result;
   }
