@@ -1,12 +1,19 @@
 #include "solution.hpp"
 
 std::vector<int> RotateRight(const std::vector<int>& vect, unsigned int no_rotations) {
+  // return empty vector if passed vector is empty
+  if (vect.empty()) {
+    return vect;
+  }
+  
+  // process to rotate int right one by one
   std::vector<int> result = vect;
   for (unsigned int i = 0; i < no_rotations; ++i) {
     int last_element = result.back();
     result.pop_back();
     result.insert(result.begin(), last_element);
   }
+  
   return result;
 }
 
